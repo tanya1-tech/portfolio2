@@ -41,7 +41,14 @@
     .project-card img { max-width: 100%; height: auto; border-radius: 5px; }
     .project-card h3 { margin-top: 0.5rem; }
 
-    
+    .project-card video {
+      width: 100%;
+      height: auto;
+      max-width: 100%;
+      border-radius: 5px;
+      margin-bottom: 1rem;
+    }
+
     .contact button {  border: none; cursor: pointer; transition: background 0.3s ease;margin: 10px 10px; width: 50px; height: 50px; justify-content:center;  }
   
     .contact button:hover { background: #333; }
@@ -52,9 +59,15 @@
     footer { background: #0d1117; color: #fff; text-align: center; padding: 1rem; }
     @media (max-width: 600px) {
       header h1 { font-size: 2rem; }
-      section { padding: 2rem 1rem; }
+      section { padding: 2rem 1rem;width: 100%;
+  height: auto; }
+  .projects{
+    justify-content: center;
+  }
       .skills ul { flex-direction: column; align-items: center; }
     }
+    
+    
   </style>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -104,8 +117,7 @@
     <div class="projects-grid">
       <!--project 1-->
       <div class="project-card">
-        <!--<img src="" alt="video of rotating navigation">-->
-        <video autoplay loop muted width="420" height="360" controls>
+        <video autoplay loop muted controls>
           <source src="Scroll Reveal.mp4" type="video/mp4">
           Your browser does not support the video tag.
         </video>
@@ -116,8 +128,7 @@
 <!--project 2-->
 
       <div class="project-card">
-        <!--<img src="" alt="video of rotating navigation">-->
-        <video autoplay loop muted width="420" height="360" controls>
+        <video autoplay loop muted controls>
           <source src="Employee Management System.mp4" type="video/mp4">
           Your browser does not support the video tag.
         </video>
@@ -130,9 +141,8 @@
       <!--project 3-->
 
       <div class="project-card">
-        <!--<img src="" alt="video of rotating navigation">-->
-        <video autoplay loop muted width="420" height="360" controls>
-          <source src="PG Life.mp4" type="video/mp4">
+        <video autoplay loop muted controls>
+          <source src="PGLife.mp4" type="video/mp4">
           Your browser does not support the video tag.
         </video>
         
@@ -144,21 +154,19 @@
 
       <!--project 4-->
       <div class="project-card">
-        <!--<img src="" alt="video of expanding cards project">-->
-        <video autoplay loop muted width="420" height="360" controls>
+        <video autoplay loop muted controls>
           <source src="Expanding Cards .mp4" type="video/mp4">
           Your browser does not support the video tag.
         </video>
         
         <h3>Expanding Cards</h3>
-        <p>The Expanding Cards Panel is a sleek, interactive web component designed to enhance user experience through visually engaging, animated panels. Built with HTML, CSS, and JavaScript, this project demonstrates a clean and responsive design where each card (or panel) expands on click to reveal more content, drawing the user’s attention and creating a dynamic browsing experience.</p>
+        <p>The Expanding Cards Panel is a sleek, interactive web component designed to enhance user experience through visually engaging, animated panels. Built with HTML, CSS, and JavaScript, this project demonstrates a clean and responsive design where each card (or panel) expands on click to reveal more content, drawing the user's attention and creating a dynamic browsing experience.</p>
         
       </div>
 
       <!--project 5-->
       <div class="project-card">
-        <!--<img src="" alt="video of rotating navigation">-->
-        <video autoplay loop muted width="420" height="360" controls>
+        <video autoplay loop muted controls>
           <source src="Movie App.mp4" type="video/mp4">
           Your browser does not support the video tag.
         </video>
@@ -172,8 +180,7 @@
       <!--project 6-->
       
       <div class="project-card">
-        <!--<img src="" alt="video of rotating navigation">-->
-        <video autoplay loop muted width="420" height="360" controls>
+        <video autoplay loop muted controls>
           <source src="Netflix.mp4" type="video/mp4">
           Your browser does not support the video tag.
         </video>
@@ -186,8 +193,7 @@
       <!--project 7-->
       
       <div class="project-card">
-        <!--<img src="" alt="video of rotating navigation">-->
-        <video autoplay loop muted width="420" height="360" controls>
+        <video autoplay loop muted controls>
           <source src="Rotating Navigation.mp4" type="video/mp4">
           Your browser does not support the video tag.
         </video>
