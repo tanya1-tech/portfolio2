@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Tanya's Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Roboto', sans-serif; background:linear-gradient(to right,
+    black 0%, 
+    #28163f 20%, 
+    #8c6d9b 50%, 
+    #28163f 80%, 
+    black 100%); color: #333; }
+    header { background:black; color: #fff; padding: 1rem; display: flex;
+  justify-content: space-between;
+  align-items: center; }
+    header h1 { font-size: 2.5rem; text-align: left;margin: 0;}
+    header p { font-size: 13px; margin-top: 0.5rem; text-align: right; }
+    .right{
+      text-align: right;
+      text-decoration-thickness: 2px;
+    }
+
+    section { padding: 2rem 2rem; max-width: 1000px; margin: 10px auto 10px auto; }
+    .about, .skills, .projects, .contact { margin-bottom: 10px; }
+
+    h2 { font-size: 2rem; color: #0d1117; margin-bottom: 1rem; text-align: center; }
+    .about p { font-size: 1.1rem; line-height: 1.6; text-align: center; color:black; background-color: #cebfcf73; border-radius: 10px; padding: 11px;}
+
+    .skills ul { display: flex; flex-wrap: wrap; list-style: none; justify-content: center; }
+    .skills li { background: #e4e4e4; margin: 0.5rem; padding: 0.5rem 1rem; border-radius: 5px; transition: transform 0.3s ease; }
+    .skills li:hover { transform: scale(1.05); }
+
+    .projects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
+    .project-card { background: #fff; padding: 1rem; border: 1px solid #ccc; border-radius: 8px; transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .project-card:hover { transform: translateY(-5px); box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+    .project-card img { max-width: 100%; height: auto; border-radius: 5px; }
+    .project-card h3 { margin-top: 0.5rem; }
+
+    
+    .contact button {  border: none; cursor: pointer; transition: background 0.3s ease;margin: 10px 10px; width: 50px; height: 50px; justify-content:center;  }
+  
+    .contact button:hover { background: #333; }
+
+    
+
+    
+    footer { background: #0d1117; color: #fff; text-align: center; padding: 1rem; }
+    @media (max-width: 600px) {
+      header h1 { font-size: 2rem; }
+      section { padding: 2rem 1rem; }
+      .skills ul { flex-direction: column; align-items: center; }
+    }
+  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <header>
+    <h1>Tanya S Poojari</h1>
+    <div class="right-side">
+    <p><b>Creative Web Designer | UI/UX Enthusiast</b></p>
+    <p>Contact no: 8518814185</p>
+    
+      <p>Email: tanyapoojari2004@gmail.com</p>
+      
+    </div></div>
+    
+  </header>
+
+  <section class="about">
+    <h2>About Me</h2>
+    <p>Hi! I'm a passionate web designer who loves creating beautiful and functional user experiences. I specialize in responsive designs and enjoy working on both personal and freelance projects.</p>
+  </section>
+
+  <section class="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>Figma</li>
+      <li>VScode </li>
+      <li>Cursor</li>
+      <li>Wordpress</li>
+      <li>Canva</li>
+      <li>Sketchbook</li>
+      <li>Photopea</li>
+      <li>Flexbox & CSS Grid</li>
+      <li>Responsive Design</li>
+      <li>Problem Solving</li>
+      <li>Time Management</li>
+      <li>Communication Skills</li>
+      <li>Attention to Detail</li>
+    </ul>
+  </section>
+
+  <section class="projects">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <!--project 1-->
+      <div class="project-card">
+        <!--<img src="" alt="video of rotating navigation">-->
+        <video autoplay loop muted width="420" height="360" controls>
+          <source src="Scroll Reveal.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        
+        <h3>My Artworks</h3>
+        <p>The scroll reveal project of my artwork  is a visually dynamic web page created using HTML, CSS, and JavaScript, designed to showcase a collection of my original artworks in an interactive and engaging way. As the user scrolls through the page, each artwork—whether sketches or paintings—appears gradually with a smooth fade-in animation, offering a clean, immersive viewing experience. </p>        
+      </div>
+<!--project 2-->
+
+      <div class="project-card">
+        <!--<img src="" alt="video of rotating navigation">-->
+        <video autoplay loop muted width="420" height="360" controls>
+          <source src="Employee Management System.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        
+        <h3>Employee Management System</h3>
+        <p>The Employee Management System is a responsive and interactive web application built using HTML, CSS, and JavaScript, focused on managing employee-related information through a user-friendly interface. This frontend-only system allows users to perform essential operations such as adding, editing, deleting, and viewing employee records directly from the browser. It features separate dashboards for HR and employees, search and filter functionality, and the ability to export data to CSV format.</p>
+        
+      </div>
+
+      <!--project 3-->
+
+      <div class="project-card">
+        <!--<img src="" alt="video of rotating navigation">-->
+        <video autoplay loop muted width="420" height="360" controls>
+          <source src="PG Life.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        
+        <h3>PGLife </h3>
+        <p>The PGLife Project is a web-based application developed as part of the Internshala Web Development Training Program, aimed at helping students and working professionals find Paying Guest (PG) accommodations across various cities and states in India. Built using HTML, CSS, Bootstrap, JavaScript, PHP, and MySQL, the platform features a clean, responsive UI where users can browse PG listings based on city, view property details such as rent, amenities, and location, and even register or log in to save preferences.</p>
+        
+      </div>
+      
+
+      <!--project 4-->
+      <div class="project-card">
+        <!--<img src="" alt="video of expanding cards project">-->
+        <video autoplay loop muted width="420" height="360" controls>
+          <source src="Expanding Cards .mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        
+        <h3>Expanding Cards</h3>
+        <p>The Expanding Cards Panel is a sleek, interactive web component designed to enhance user experience through visually engaging, animated panels. Built with HTML, CSS, and JavaScript, this project demonstrates a clean and responsive design where each card (or panel) expands on click to reveal more content, drawing the user’s attention and creating a dynamic browsing experience.</p>
+        
+      </div>
+
+      <!--project 5-->
+      <div class="project-card">
+        <!--<img src="" alt="video of rotating navigation">-->
+        <video autoplay loop muted width="420" height="360" controls>
+          <source src="Movie App.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        
+        <h3>Movie App</h3>
+        <p>This Movie App is a visually engaging, frontend-only web project built using HTML, CSS, and JavaScript. It displays a collection of movie cards featuring poster images in a grid layout, styled for a clean and modern user experience. Each card represents a movie, and when the user hovers over a card, a smooth transition reveals the description of the movie using CSS hover effects</p>
+        
+      </div>
+       
+     
+      <!--project 6-->
+      
+      <div class="project-card">
+        <!--<img src="" alt="video of rotating navigation">-->
+        <video autoplay loop muted width="420" height="360" controls>
+          <source src="Netflix.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        
+        <h3>Netflix Navigation</h3>
+        <p>This project involves building a responsive Netflix-style navigation bar using HTML, CSS, and JavaScript, replicating the sleek and modern look of the popular streaming platform.</p>
+        
+      </div>
+
+      <!--project 7-->
+      
+      <div class="project-card">
+        <!--<img src="" alt="video of rotating navigation">-->
+        <video autoplay loop muted width="420" height="360" controls>
+          <source src="Rotating Navigation.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        
+        <h3>Rotating Navigation</h3>
+        <p>The Rotating Navigation CSS Project is a creative and interactive design that features a unique rotating effect. When the user clicks the menu toggle button, the entire layout smoothly rotates to unveil a stylish sidebar or menu panel. This dynamic effect is achieved using a combination of HTML structure, CSS transitions, and JavaScript class manipulation. </p>
+        
+      </div>
+
+      
+
+       <!--project 7-->
+      
+       
+    </div>
+  </section>
+<!--
+  <section class="contact">
+    <h2>Contact</h2>
+    
+    <a target="_blank" href="https://www.linkedin.com/in/tanya-s-poojari-649540259"  rel="https://www.linkedin.com/in/" style="text-align:center; justify-content:center;" ><button class="tablink" onclick="openPage('Linkedin', this)"><i class="fa fa-linkedin"  ></i></button>Tanya S Poojari</a><br>
+
+
+   
+    <a target="_blank" href="mailto:tanyapoojari2004@gmail.com"  rel="https://mail.google.com/mail/u/0/"><button class="tablink" onclick="openPage('Email', this)"><i class="fa fa-envelope"></i></button>tanyapoojari2004@gmail.com</a>
+
+
+  </section>
+-->
+  <footer>
+    <p>Thankyou</p>
+  </footer>
+</body>
+</html>
