@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tanya | Portfolio</title>
+
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<!-- HERO -->
+<header class="hero">
+  <div>
+    <h1>Hi, I'm <span>Tanya</span> 👋</h1>
+    <h2>Full Stack Web Developer</h2>
+
+    <p>
+      I build scalable web applications using MERN & Java stack,
+      with a strong focus on clean UI/UX and real-world functionality.
+    </p>
+
+    <div class="hero-buttons">
+      <a href="#projects" class="btn primary">View Projects</a>
+
+      <a href="Tanya_Resume.pdf" class="btn secondary" download>
+        <i class="fas fa-download"></i> Resume
+      </a>
+
+      <a href="https://mail.google.com/mail/?view=cm&fs=1&to=tanyapoojari2004@gmail.com" 
+   target="_blank" 
+   class="btn primary">
+   Email Me
+</a>
+
+      <!-- <a href="mailto:tanyapoojari2004@gmail.com?subject=Hiring Inquiry&body=Hi Tanya," 
+   class="btn primary">
+   Email Me
+</a> -->
+    </div>
+  </div>
+</header>
+
+<!-- TECH STACK -->
+<!-- <section class="fade-section">
+  <h2>Tech Stack</h2>
+  <div class="skills-container">
+    <span class="skill">MERN Stack</span>
+    <span class="skill">Java Full Stack</span>
+    <span class="skill">Angular</span>
+    <span class="skill">MySQL</span>
+    <span class="skill">REST APIs</span>
+  </div>
+</section> -->
+
+<!-- ABOUT -->
+<section class="about fade-section">
+  <h2>About Me</h2>
+  <p>
+    Full Stack Web Developer with hands-on experience in building responsive web applications using MERN and Java. 
+  Developed real-world projects including authentication systems, admin dashboards, and CRUD-based applications, focusing on scalable backend and modern UI.
+  </p>
+</section>
+
+<!-- SKILLS -->
+<section class="skills-section fade-section">
+  <h2>Skills</h2>
+
+  <div class="skills-grid">
+
+    <div class="skill-row">
+      <h3>Frontend</h3>
+      <div class="skills-container">
+        <span class="skill">HTML</span>
+        <span class="skill">CSS</span>
+        <span class="skill">JavaScript</span>
+        <span class="skill">React</span>
+        <span class="skill">Angular</span>
+        <span class="skill">Bootstrap</span>
+      </div>
+    </div>
+
+    <div class="skill-row">
+      <h3>Backend</h3>
+      <div class="skills-container">
+        <span class="skill">Node.js</span>
+        <span class="skill">Express.js</span>
+        <span class="skill">Java</span>
+        <span class="skill">Spring Boot</span>
+      </div>
+    </div>
+
+    <div class="skill-row">
+      <h3>Database</h3>
+      <div class="skills-container">
+        <span class="skill">MongoDB</span>
+        <span class="skill">MySQL</span>
+      </div>
+    </div>
+
+    <div class="skill-row">
+      <h3>Tools</h3>
+      <div class="skills-container">
+        <span class="skill">Git & GitHub</span>
+        <span class="skill">Figma</span>
+        <span class="skill">Responsive Design</span>
+        <span class="skill">Problem Solving</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="fade-section">
+  <h2>Projects</h2>
+
+  <div class="projects-grid">
+
+    <div class="project-card">
+      <video autoplay loop muted controls>
+        <source src="notesphere1.mp4">
+      </video>
+      <h3>Notesphere</h3>
+      <p>MERN-based peer-to-peer notes sharing platform.</p>
+
+      <!-- <div class="project-links">
+        <a href="#">Live</a>
+        <a href="#">Code</a>
+      </div> -->
+    </div>
+
+    <div class="project-card">
+      <video autoplay loop muted controls>
+        <source src="villa1.mp4">
+      </video>
+      <h3>Villa</h3>
+      <p>Full-stack property listing web app.</p>
+
+    </div>
+
+    <div class="project-card">
+      <video autoplay loop muted controls>
+        <source src="fynk.mp4">
+      </video>
+      <h3>FYNK</h3>
+      <p>Fashion e-commerce MERN platform.</p>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact fade-section">
+  <h2>Let's Connect</h2>
+
+  <a href="https://mail.google.com/mail/?view=cm&fs=1&to=tanyapoojari2004@gmail.com" 
+   target="_blank" 
+   class="btn primary">
+   Email
+</a>
+  <a href="https://www.linkedin.com/in/tanya-s-poojari-649540259"
+     target="_blank"
+     class="btn secondary">
+     <i class="fab fa-linkedin"></i> LinkedIn
+  </a>
+</section>
+
+<footer>
+  <p>© 2026 Tanya Poojari</p>
+</footer>
+
+<!-- JS Animation -->
+<script>
+const sections = document.querySelectorAll('.fade-section');
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show');
+    }
+  });
+}, { threshold: 0.2 });
+
+sections.forEach(section => observer.observe(section));
+</script>
+
+</body>
+</html>
