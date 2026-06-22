@@ -151,7 +151,10 @@ h3 {
 
 /* LEFT LABEL */
 .skill-row h3 {
-  width: 140px;
+  width: 180px;
+
+  min-width: 180px;
+
   margin: 0;
   text-align: left;
   color: #ddd;
@@ -220,7 +223,114 @@ h3 {
   font-size: 13px;
 }
 
+/* ================= EXPERIENCE ================= */
+
+.experience-container {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.experience-card {
+  background: rgba(255,255,255,0.08);
+  border-radius: 15px;
+  padding: 20px;
+  transition: 0.4s;
+  backdrop-filter: blur(10px);
+  margin: 15px auto;
+}
+
+.experience-card:hover {
+  transform: translateY(-10px);
+}
+
+.experience-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.experience-header h3 {
+  font-size: 1.1rem;
+  color: #fff;
+}
+
+.experience-header span {
+  color: #ccc;
+  font-size: 0.9rem;
+}
+
+.experience-card h4 {
+  color: #ff7ac6;
+  margin-bottom: 12px;
+}
+
+.experience-card ul {
+  padding-left: 18px;
+}
+
+.experience-card li {
+  margin-bottom: 8px;
+  color: #ddd;
+  line-height: 1.6;
+}
+
+
+
 /* ================= CONTACT ================= */
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+}
+
+.contact-card {
+  background: rgba(255,255,255,0.08);
+  border-radius: 15px;
+  padding: 20px;
+  transition: 0.4s;
+  backdrop-filter: blur(10px);
+  margin: 15px auto;
+}
+
+.contact-card:hover {
+  transform: translateY(-10px);
+}
+
+.contact-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.contact-header h3 {
+  font-size: 1.1rem;
+  color: #fff;
+}
+
+.contact-header span {
+  color: #ccc;
+  font-size: 0.9rem;
+}
+
+.contact-card h4 {
+  color: #ff7ac6;
+  margin-bottom: 12px;
+}
+
+.contact-card ul {
+  padding-left: 18px;
+}
+
+.contact-card li {
+  margin-bottom: 8px;
+  color: #ddd;
+  line-height: 1.6;
+}
+
 .contact {
   text-align: center;
 }
